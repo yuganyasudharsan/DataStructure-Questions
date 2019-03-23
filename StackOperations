@@ -43,6 +43,7 @@ public class StackOperations {
         }
     }
 
+//Add k to each element of the bottom e elements of the stack
     private static void increment(Stack<Integer> st, int e, int k) {
         Stack<Integer> temp = new Stack<>();
         while (!st.isEmpty()) {
