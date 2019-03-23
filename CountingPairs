@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class CountingPairs {
+
+    public static void main(String[] args) {
+        System.out.println("Enter No of array Elements:");
+        Scanner in = new Scanner(System.in); 
+        int size = in.nextInt();
+        Set<Integer> pairs = new TreeSet<>();//For unique sorted elements
+        System.out.println("Enter the Elements:");
+        for (int i = 0 ;i < size ; i++) {
+            pairs.add(in.nextInt());
+        }        
+        System.out.println("Enter the difference:");
+        System.out.println("count:"+getCountofPairs(pairs.toArray(new Integer[0]),in.nextInt()));
+    }
+
+    public static int getCountofPairs(Integer[] array, int diff){  
+        int count = 0;
+        int left = 0;
+        int right = 0;
+        while(right < array.length) 
+        { 
+            if(array[right] - array[left] == diff) 
+            { 
+                count++; 
+                left++; 
+                right++; 
+            } 
+            else if(array[right] - array[left] > diff) 
+                left++; 
+            else
+                right++; 
+        }  
+        return count; 
+    }
+}
