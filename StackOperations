@@ -1,0 +1,62 @@
+import java.util.Scanner;
+import java.util.Stack;
+
+public class StackOperations {
+
+    public static void main(String[] args) {
+        System.out.println("Enter No of Operations:");
+        Scanner in = new Scanner(System.in); 
+        int no = in.nextInt();
+        Stack<Integer> st = new Stack();
+        for (int i = 0; i < no; i++) {
+            String operation = in.next();
+            switch (operation) {
+            case "push":
+                int value = in.nextInt();
+                st.push(value);
+                System.out.println(value);
+                break;
+            case "pop":
+                st.pop();
+                if(!st.isEmpty()) {
+                    System.out.println(st.peek());
+                }
+                else {
+                    System.out.println("EMPTY");
+                }
+                break;
+            case "inc":
+                int e = in.nextInt();
+                int k = in.nextInt();
+                increment(st,e,k);
+                if(!st.isEmpty()) {
+                    System.out.println(st.peek());
+                }
+                else {
+                    System.out.println("EMPTY");
+                }
+                break;
+            default:
+                System.out.println("Invalid Operation");
+                break;
+            }
+        }
+    }
+
+    private static void increment(Stack<Integer> st, int e, int k) {
+        Stack<Integer> temp = new Stack<>();
+        while (!st.isEmpty()) {
+            temp.push(st.pop());
+        }
+        while (!temp.isEmpty()) {
+            if (e > 0) {
+                st.push(temp.pop() + k);
+                e--;
+            }
+            else {
+                st.push(temp.pop());
+            }
+        }
+    }
+
+}
