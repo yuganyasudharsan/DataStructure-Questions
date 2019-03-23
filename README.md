@@ -66,8 +66,11 @@ Sum:6
 StackOperations:
 
 Implement a simple stack that accepts the following commands and performs the operations associated with them:
+
 push k : Push integer k onto the top of the stack.
+
 pop : Pop the top element from the stack.
+
 inc e k : Add k to each of the bottome elements of thestack.
 
 After every command, print the top of the stack.
