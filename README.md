@@ -11,16 +11,23 @@ which a + k = b.
 INPUT:
 
 Enter No of array Elements:
+
 4
+
 Enter the Elements:
+
 1
 1
 1
 2
+
 Enter the difference:
+
 1
 
+
 OUTPUT:
+
 count:1
 
 
