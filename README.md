@@ -9,6 +9,7 @@ number of distinct valid pairs of integers (a, b) in the list for
 which a + k = b.
 
 INPUT:
+
 Enter No of array Elements:
 4
 Enter the Elements:
