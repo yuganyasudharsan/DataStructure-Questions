@@ -1,4 +1,5 @@
 Counting Pairs:
+
 Two pairs of integers (a, b) and (c, d) are considered distinct if
 at least one element of (a, b) ∉ (c, d). For example given a list
 (1, 2, 2, 3), (1, 2) is distinct from (1, 3) and (2, 3) but not from
@@ -35,6 +36,7 @@ count:1
 
 
 MinimumUniqueArray:
+
 Given an array, you must increment any duplicate elements
 until all its elements are unique. In addition, the sum of its
 elements must be the minimum possible within the rules. For
@@ -62,6 +64,7 @@ OUTPUT:
 Sum:6
 
 StackOperations:
+
 Implement a simple stack that accepts the following commands and performs the operations associated with them:
 push k : Push integer k onto the top of the stack.
 pop : Pop the top element from the stack.
@@ -97,6 +100,8 @@ inc 2 1
 pop
 
 3
+
 pop
+
 5
 
