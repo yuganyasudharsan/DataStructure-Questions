@@ -17,8 +17,11 @@ Enter No of array Elements:
 Enter the Elements:
 
 1
+
 1
+
 1
+
 2
 
 Enter the difference:
@@ -39,14 +42,23 @@ example, if arr = [3, 2, 1, 2, 7], then arr = [3, 2, 1, 4, 7]
 and its elements sum to a minimal value of 3 + 2 + 1 + 4 + 7 =
 17.
 
+
 INPUT:
+
 Enter No of array Elements:
+
 3
+
 Enter the Elements:
+
 1
+
 2
+
 2
+
 OUTPUT:
+
 Sum:6
 
 StackOperations:
@@ -57,19 +69,33 @@ inc e k : Add k to each of the bottome elements of thestack.
 
 After every command, print the top of the stack.
 
+
 INPUT and OUTPUT FORMAT:
+
 Enter No of Operations:
+
 6
+
 Enter the Operations:
+
 push 4
+
 4
+
 push 2
+
 2
+
 push 1
+
 1
+
 inc 2 1
+
 1
+
 pop
+
 3
 pop
 5
