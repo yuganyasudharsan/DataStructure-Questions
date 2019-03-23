@@ -1,0 +1,32 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MinimumUniqueArray {
+
+    public static void main(String[] args) {
+        System.out.println("Enter No of array Elements:");
+        Scanner in = new Scanner(System.in); 
+        int size = in.nextInt();
+        int[] array = new int[size];
+        for (int i = 0 ;i < size ; i++) {
+            array[i] = in.nextInt();
+        }
+        //Sorted the array
+        Arrays.sort(array);
+        System.out.println("Sum:"+getMinimumUniqueSum(array));
+    }
+
+    private static int getMinimumUniqueSum(int[] array) {
+        int count = array[0];
+        for (int i=1 ; i < array.length ; i++)
+        {
+            if (array[i-1] >= array[i])
+            {//Comparing with previous value and incrementing the current one.
+                array[i] = array[i-1] + 1;
+            }
+            count += array[i];
+        }
+        return count;
+    }
+
+}
